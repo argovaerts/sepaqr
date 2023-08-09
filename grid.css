@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 640px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        margin: 0.5rem 0;
+        width: 100% !important;
+    }
+}
+
+.hidden {
+    display: none;
+}

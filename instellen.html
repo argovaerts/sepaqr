@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEPA QR > instellen</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>Instell<mark>ingen</mark></h1>
+            </header>
+            <form id="org_settings_form">
+                <label for="org_name">Naam van de begunstigde<sup>Vereist</sup></label>
+                <input type="text" id="org_name" name="org_name" placeholder="NORMAL.eco">
+
+                <label for="org_iban">IBAN-nummer<sup>Vereist</sup></label>
+                <input type="text" id="org_iban" name="org_iban" placeholder="BE88737059082541">
+
+                <label for="org_payconiq_product_id">Payconiq Sticker Id</label>
+                <input type="text" id="org_payconiq_product_id" name="org_payconiq_product_id"
+                    placeholder="61e68efa7a49370006cfa1b1">
+
+                <button type="submit">Instellen</button>
+
+                <p id="org_settings_form_success" class="hidden">
+                    De instellingen zijn bewaard.
+                </p>
+            </form>
+        </section>
+
+        <footer>
+            <hr>
+            <p>
+                <small>&copy; 2023 Arne Govaerts</small>
+            </p>
+        </footer>
+
+        <script type="module" src="instellen.js"></script>
+    </main>
+</body>
+
+</html>

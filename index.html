@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEPA QR</title>
+
+    <link rel="stylesheet" href="mvp.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+
+<body>
+    <main>
+        <section id="sepa_form_section">
+            <header>
+                <h1>SEPA <mark>QR</mark></h1>
+            </header>
+            <form id="sepa_form">
+                <label for="amount">Bedrag</label>
+                <div class="row">
+                    <div class="column half">
+                        <input type="number" id="amount" name="amount"  min="0.01" step="0.01" placeholder="0.01"
+                            class="col" value="0.01">
+                    </div>
+                    <div class="column half">
+                        <input type="text" id="currency" name="currency" readonly value="EUR" class="col">
+                    </div>
+                </div>
+
+                <button type="submit">Aanmaken</button>
+            </form>
+        </section>
+
+        <section id="sepa_qrcode_section" class="hidden"></section>
+        
+        <section id="payconiq_qrcode_section" class="hidden"></section>
+
+        <section id="payconiq_button_section" class="hidden">
+            <button id="payconiq_button">Werkt niet? Fallback naar Payconiq</button>
+        </section>
+
+        <section id="sepa_button_section" class="hidden">
+            <button id="sepa_button">Terug naar SEPA QR</button>
+        </section>
+
+        <section id="reset_button_section" class="hidden">
+            <button id="reset_button" type="reset">Nieuw</button>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>
+            <center>
+                <a href="instellen.html">Instellen</a>
+            </center>
+        </p>
+        <p>
+            <small>&copy; 2023 Arne Govaerts</small>
+        </p>
+    </footer>
+
+    <script src="node_modules/davidshimjs-qrcodejs/qrcode.min.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
