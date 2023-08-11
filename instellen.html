@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
     <link rel="stylesheet" href="grid.css">
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -43,6 +44,10 @@
         </footer>
 
         <script type="module" src="instellen.js"></script>
+
+        <script>
+            if (navigator.serviceWorker && !navigator.serviceWorker.controller) { navigator.serviceWorker.register('sw.js'); }
+        </script>
     </main>
 </body>
 

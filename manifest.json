@@ -1,0 +1,12 @@
+{
+    "name": "SEPA QR",
+    "short_name": "SEPA QR",
+    "description": "Get paid on the go",
+    "icons": [],
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "background_color": "#fff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#fff"
+}
